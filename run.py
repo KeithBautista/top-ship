@@ -179,7 +179,7 @@ def accept_valid_bullet_placement():
             continue
         row = placement[0]
         col = placement[1]
-        if not row.alpha() or not col.isnumeric():
+        if not row.isalpha() or not col.isnumeric():
             print('''Error: Please enter letter (A-J) for row and (0-9) for
             column''')
             continue
