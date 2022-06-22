@@ -87,3 +87,10 @@ def accept_valid_bullet_placement():
     pass
 
     return 0, 0
+
+def check_for_ship_sunk(row, col):
+    """Checks if all parts of the ship has been shot, if so then increment 
+       amount of ships sunk
+       Return True or False"""
+    global ship_positions
+    global grid
