@@ -71,7 +71,7 @@ def validate_grid_and_place_ship(start_row, end_row, start_col, end_col):
 # Based on directions will try place ship on grid
 
 
-def try_to_place_ship_on_grid(row, col, direction, length):
+def try_place_ship_grid(row, col, direction, length):
     global grid_size
 
     start_row, end_row, start_col, end_col = row, row + 1, col, col + 1
@@ -105,16 +105,34 @@ def create_grid():
     """
     Will create a grid based on user input and randomly place
     down ships of different sizes and in different directions.
-    Has no Return but will use try_to_place_ship_on_grid
+    Has no Return but will use try_place_ship_grid
     """
     global grid
     global grid_size
     global num_of_ships
     global ship_positions
 
-    pass
+    random.seed(time.time())
 
-    try_to_place_ship_on_grid(0, 0, 0, 0)
+    grid = []
+    for r in range(rows):
+        row = []
+        for c in range(cols):
+            row.append(".")
+        grid.append(row)
+
+    num_of_ships_sunk = 0
+
+    ship_positions = []
+
+    while num_of_ships_placed != num_of_ships:
+        random_row = random.randint(0, rows - 1)
+        random_col = random.randint(0, cols - 1)
+        direction = random.choice(["left", "right", "up", "down"])
+        ship_size = random.randint(3, 5)
+        if try_place_ship_grid(random_row, random_col, direction, ship_size):
+            num_of_ships += 1
+    pass
 
 # Print Grid
 
