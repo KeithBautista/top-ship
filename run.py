@@ -67,3 +67,11 @@ def create_grid():
     pass
 
     try_to_place_ship_on_grid(0, 0, 0, 0)
+
+def print_grid():
+    """
+    This method will print the grid while rows using the alphabet
+    and the columns using integers
+    """
+    global grid
+    global alphabet
