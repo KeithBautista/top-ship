@@ -1,6 +1,6 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# Write your code to expect a terminal of 80 characters wide and 24 row high
 
 import random
 import time
@@ -115,9 +115,9 @@ def create_grid():
     random.seed(time.time())
 
     grid = []
-    for r in range(rows):
+    for r in range(row):
         row = []
-        for c in range(cols):
+        for c in range(col):
             row.append(".")
         grid.append(row)
 
@@ -126,8 +126,8 @@ def create_grid():
     ship_positions = []
 
     while num_of_ships_placed != num_of_ships:
-        random_row = random.randint(0, rows - 1)
-        random_col = random.randint(0, cols - 1)
+        random_row = random.randint(0, row - 1)
+        random_col = random.randint(0, col - 1)
         direction = random.choice(["left", "right", "up", "down"])
         ship_size = random.randint(3, 5)
         if try_place_ship_grid(random_row, random_col, direction, ship_size):
@@ -139,7 +139,7 @@ def create_grid():
 
 def print_grid():
     """
-    This method will print the grid while rows using the alphabet
+    This method will print the grid while row using the alphabet
     and the columns using integers
     """
     global grid
