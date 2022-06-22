@@ -1,9 +1,9 @@
+import random
+import time
+
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-
-import random
-import time
 
 """
 ----- GLOBAL VARIABLES -----
@@ -309,3 +309,9 @@ def main():
         print("")
         check_for_game_over()
 
+
+if __name__ == '__main__':
+
+    """Will only be called when program is run from terminal
+    or an IDE like PyCharms"""
+    main()
