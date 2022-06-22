@@ -44,6 +44,25 @@ def validate_grid_and_place_ship(start_row, end_row, start_col, end_col):
     global grid
     global ship_positions
 
+    """
+    All valid is true, if not valid and grid does not contain . then false.
+    """
+    all_valid = True
+    for r in range(start_row, end_row):
+        for c in range(start_col, end_col):
+            if grid[r][c] != ".":
+                all_valid = False
+                break
+    """
+    If all valid then append the ships positions
+    """
+    if all_valid:
+        ship_positions.append([start_row, end_row, start_col, end_col])
+        for r in range(start_row, end_row):
+            for c in range(start_col, end_col):
+                grid[r][c] = "0"
+    return all_valid
+
     pass
 
 # Based on directions will try place ship on grid
