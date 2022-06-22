@@ -109,3 +109,15 @@ def shoot_bullet():
     row, col = accept_valid_bullet_placement()
 
     pass
+
+def check_for_game_over():
+    """
+    Will check if all ships have sunk or have either ran out of missiles then its game over
+    Has no Return
+    """
+    global num_of_ships_sunk
+    global num_of_ships
+    global bullets_left
+    global game_over
+
+    pass
