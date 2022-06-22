@@ -69,7 +69,7 @@ def validate_grid_and_place_ship(start_row, end_row, start_col, end_col):
 # Based on directions will try place ship on grid
 
 
-def try_place_ship_grid(row, col, direction, length):
+def try_to_place_ship_on_grid(row, col, direction, length):
     global grid_size
 
     start_row, end_row, start_col, end_col = row, row + 1, col, col + 1
@@ -98,11 +98,8 @@ def try_place_ship_grid(row, col, direction, length):
 
 
 def create_grid():
-    """
-    Will create a grid based on user input and randomly place
-    down ships of different sizes and in different directions.
-    Has no Return but will use try_place_ship_grid
-    """
+    """Will create a 10x10 grid and randomly place down ships
+       of different sizes in different directions"""
     global grid
     global grid_size
     global num_of_ships
@@ -128,17 +125,14 @@ def create_grid():
         random_col = random.randint(0, cols - 1)
         direction = random.choice(["left", "right", "up", "down"])
         ship_size = random.randint(3, 5)
-        if try_place_ship_grid(random_row, random_col, direction, ship_size):
-            num_of_ships += 1
+        if try_to_place_ship_on_grid(random_row, random_col, direction, ship_size):
+            num_of_ships_placed += 1
 
 # Print Grid
 
 
 def print_grid():
-    """
-    This method will print the grid while rows using the alphabet
-    and the columns using integers
-    """
+    """Will print the grid with rows A-J and columns 0-9"""
     global grid
     global alphabet
 
@@ -147,11 +141,11 @@ def print_grid():
     alphabet = alphabet[0: len(grid) + 1]
 
     for row in range(len(grid)):
-        print(alphabet[row], end=")")
+        print(alphabet[row], end=") ")
         for col in range(len(grid[row])):
-            if grid[row][col] == "0":
+            if grid[row][col] == "O":
                 if debug_mode:
-                    print("0", end=" ")
+                    print("O", end=" ")
                 else:
                     print(".", end=" ")
             else:
