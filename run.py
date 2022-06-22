@@ -75,3 +75,15 @@ def print_grid():
     """
     global grid
     global alphabet
+
+def accept_valid_bullet_placement():
+    """
+    Will validate row and column that has been placed by user on board
+    Has Return and row, col are both integers
+    """
+    global alphabet
+    global grid
+
+    pass
+
+    return 0, 0
