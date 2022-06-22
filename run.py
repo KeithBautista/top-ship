@@ -210,8 +210,6 @@ def accept_valid_bullet_placement():
 
     return row, col
 
-    pass
-
 # Check if Ship Sunk
 
 
@@ -224,7 +222,18 @@ def check_for_ship_sunk(row, col):
     global ship_positions
     global grid
 
-    pass
+    for position in ship_positions:
+        start_row = position[0]
+        end_row = position[1]
+        start_col = position[2]
+        end_col = position[3]
+        if start_row <= row <= end_row and start_col <= col <= end_col:
+            # Ship found,now check if its all sunk
+            for r in range(start_row, end_row):
+                for c in range(start_col, end_col):
+                    if grid[r][c] != "X":
+                        return false
+    return True
 
 # Method to shoot bullet
 
