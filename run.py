@@ -77,7 +77,7 @@ def try_place_ship_grid(row, col, direction, length):
     start_row, end_row, start_col, end_col = row, row + 1, col, col + 1
     if direction == "left":
         return False
-    start_col = col - length + 1
+        start_col = col - length + 1
 
     elif direction == "right":
         if col + length >= grid_size:
@@ -144,6 +144,27 @@ def print_grid():
     """
     global grid
     global alphabet
+
+    debug_mode = True
+
+    alphabet = alphabet[0: len(grid) + 1]
+
+    for row in range(len(grid)):
+        print(alphabet[row], end=")")
+        for col in range(len(grid[row])):
+            if grid[row][col] == "0":
+                if debug_mode:
+                    print("0", end=" ")
+                else:
+                    print(".", end=" ")
+            else:
+                print(grid[row][col], end=" ")
+        print("")
+
+    print("  ", end=" ")
+    for i in range(len(grid[0])):
+        print(str(i), end=" ")
+    print("")
 
 # Check Valid Bullet Placement
 
