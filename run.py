@@ -119,7 +119,7 @@ def create_grid():
             row.append(".")
         grid.append(row)
 
-    num_of_ships_sunk = 0
+    num_of_ships_placed = 0
 
     ship_positions = []
 
