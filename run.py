@@ -110,6 +110,8 @@ def create_grid():
 
     random.seed(time.time())
 
+    rows, cols = (grid_size, grid_size)
+
     grid = []
     for r in range(rows):
         row = []
