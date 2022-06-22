@@ -54,7 +54,7 @@ def validate_grid_and_place_ship(start_row, end_row, start_col, end_col):
                 all_valid = False
                 break
     """
-    If all valid then append the ships positions
+    If all valid then append the ships positions as '0'
     """
     if all_valid:
         ship_positions.append([start_row, end_row, start_col, end_col])
@@ -70,6 +70,16 @@ def validate_grid_and_place_ship(start_row, end_row, start_col, end_col):
 
 def try_to_place_ship_on_grid(row, col, direction, length):
     global grid_size
+
+    start_row, end_row, start_col, end_col = row, row + 1, col, col + 1
+    if direction == "left":
+        return False
+    start_col = col - length + 1
+
+    elif direction == "right":
+        if col + length >= grid_size:
+            return False
+        end_col = col + length
 
     pass
 
