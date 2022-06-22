@@ -3,7 +3,7 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
 """
----GLOBAL VARIABLES--
+----- GLOBAL VARIABLES -----
 """
 
 # Grid as a whole
@@ -31,14 +31,21 @@ ship_positions = [[]]
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 """
--- METHODS --
+----- METHODS -----
 """
 
 # Validation for placing ship on grid
 def validate_grid_and_place_ship(start_row, end_row, start_col, end_col):
     """Will check the row and or column to validate the placement of ship
-        on the grid"""
+       on the grid.
+       This will also return either True or False"""
     global grid
     global ship_positions
+
+    pass
+
+# Based on directions will try place ship on grid
+def try_to_place_ship_on_grid(row, col, direction, length):
+    global grid_size
 
     pass
