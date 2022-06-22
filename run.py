@@ -54,6 +54,11 @@ def try_to_place_ship_on_grid(row, col, direction, length):
 
 # Creating the Grid
 def create_grid():
+    """
+    Will create a grid based on user input and randomly place
+    down ships of different sizes and in different directions.
+    Has no Return but will use try_to_place_ship_on_grid
+    """
     global grid
     global grid_size
     global num_of_ships
