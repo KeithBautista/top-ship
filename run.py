@@ -248,8 +248,22 @@ def shoot_bullet():
     global bullets_left
 
     row, col = accept_valid_bullet_placement()
+    print("")
+    print("------------------------------")
 
-    pass
+    if grid[row][col] == ".":
+        print("You missed, no ship was shot")
+        grid[row][col] = "#"
+    elif grid[row][col] == "0":
+        print("You hit!", end=" ")
+        grid[row][col] = "X"
+        if check_for_ship_sunk(row, col):
+            print("A Ship was completely sunk!")
+            num_of_ships_sunk += 1
+        else:
+            print("A ship was shot!")
+
+    bullets_left -= 1
 
 # Check if Game Over
 
