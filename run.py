@@ -2,6 +2,9 @@
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
 
+import random
+import time
+
 """
 ----- GLOBAL VARIABLES -----
 """
@@ -81,9 +84,19 @@ def try_to_place_ship_on_grid(row, col, direction, length):
             return False
         end_col = col + length
 
+    elif direction == "up":
+        if row - length < 0:
+            return False
+        start_row = row - length + 1
+
+    elif direction == "down":
+        if row + length >= grid_size:
+            return False
+        end_row = row + length
+
     pass
 
-    return validate_grid_and_place_ship(0, 0, 0, 0)
+    return validate_grid_and_place_ship(start_row, end_row, start_col, end_col)
 
 # Creating the Grid
 
