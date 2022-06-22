@@ -13,7 +13,7 @@ import time
 grid = [[]]
 
 # Grid Size, To be manipulated based on input of user
-grid_size = 10
+grid_size = 0
 
 # The amount of Ships user can place on Grid
 num_of_ships = 8
@@ -290,6 +290,20 @@ def main():
 
     print("Welcome to Top Ship")
     print("You have 50 bullets to take down 8 ships, may the battle begin!")
+
+    print()
+    print("The board size must be integers between 3 and 10\n")
+
+    while True:
+        try:
+            global grid_size
+            grid_size = int(input("Choose the board size: "))
+            if grid_size >= 3 and grid_size <= 10:
+                break
+        except ValueError:
+            print("The board size must be an integer number\n")
+        else:
+            print("Out of Bounds: Please choose an integer between 3 and 10\n")
 
     create_grid()
 
