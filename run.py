@@ -279,7 +279,12 @@ def check_for_game_over():
     global bullets_left
     global game_over
 
-    pass
+    if num_of_ships == num_of_ships_sunk:
+        print("Congratulations you won!")
+        game_over = True
+    elif bullets_left <= 0:
+        print("Sorry, you lost! You ran out of bullets, try again next time!")
+        game_over = True
 
 # Main Point of Entry
 
