@@ -229,7 +229,7 @@ def check_for_ship_sunk(row, col):
             for r in range(start_row, end_row):
                 for c in range(start_col, end_col):
                     if grid[r][c] != "X":
-                        return false
+                        return False
     return True
 
 # Method to shoot bullet
@@ -309,7 +309,3 @@ def main():
         print("")
         check_for_game_over()
 
-if __name__ == '__main__':
-    """Will only be called when program is run from terminal
-    or an IDE like PyCharms"""
-    main()
