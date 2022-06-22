@@ -49,3 +49,16 @@ def try_to_place_ship_on_grid(row, col, direction, length):
     global grid_size
 
     pass
+
+    return validate_grid_and_place_ship(0, 0, 0, 0)
+
+# Creating the Grid
+def create_grid():
+    global grid
+    global grid_size
+    global num_of_ships
+    global ship_positions
+
+    pass
+
+    try_to_place_ship_on_grid(0, 0, 0, 0)
