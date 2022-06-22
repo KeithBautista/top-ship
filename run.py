@@ -311,3 +311,7 @@ def main():
         print("------------------------------")
         print("")
         check_for_game_over()
+
+if __name__ == '__main__':
+    """Will only be called when program is run from terminal or an IDE like PyCharms"""
+    main()
