@@ -287,7 +287,14 @@ def main():
     check_for_game_over
     """
     global game_over
-
+    print("""                                  )___(
+                           _______/__/_
+                  ___     /===========|   ___
+ ____       __   [\\\]___/____________|__[///]   __
+ \   \_____[\\]__/___________________________\__[//]___
+  \40A                                                 |
+   \                     TOP SHIP                       /
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
     print("Welcome to Top Ship")
     print("You have 25 Missiles to take down the ships, may the battle begin!")
 
@@ -305,7 +312,7 @@ def main():
         else:
             print("Out of Bounds: Please choose an integer between 8 and 10\n")
     while True:
-        try: 
+        try:
             global num_of_ships
             num_of_ships = int(input("Choose number of ships: "))
             if num_of_ships >= 3 and num_of_ships <= 6:
