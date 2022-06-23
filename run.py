@@ -19,7 +19,7 @@ grid_size = 0
 num_of_ships = 0
 
 # Bullets Left
-bullets_left = 50
+bullets_left = 25
 
 # If Game is Over
 game_over = False
