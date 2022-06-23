@@ -147,8 +147,8 @@ def print_grid():
         print(alphabet[row], end=") ")
         for col in range(len(grid[row])):
             if grid[row][col] == ".":
-                if debug_mode is False:
-                    print(".", end=" ")
+                if debug_mode:
+                    print("0", end=" ")
                 else:
                     print(".", end=" ")
             else:
