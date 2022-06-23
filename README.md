@@ -180,3 +180,19 @@ All code passed with no errors and no warnings to show.
 <details><summary>Screenshots</summary>
 <img src="docs/user_stories/user_stories_grid_adjusted.png">
 </details>
+
+## Bugs
+
+| **Bug** | **Fix** |
+| ----------- | ----------- |
+| When updating the board size and no of ships in the input, the accomodating variables were not being updated | Allowing the variable to be accessed Globally meant that other methods were able to use it |
+| Whitespace | PEP8 validator found all whitespaces, in order to remove this error, you need to remove spaces that you may not see using the naked eye unless highlighted |
+
+## Deployment
+The website was deployed using Heroku by following these steps
+1. Login or Create a Heroku Account
+2. Click the "new" button in the upper right corner and select "create new app"
+3. Choose and app name and your region and click "Create app"
+4. Go to the "settings" tab of your build and add the python build first and then the node.js build. Without the node.js pack the mock terminal will not work.
+5. Go to the Config Vars just right above the buildpacks and place in "PORT" as the "KEY" and then "8000" as the "VALUE" 
+6. 
