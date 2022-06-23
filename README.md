@@ -75,3 +75,36 @@ Top-Ship is an application that mimics the very popular boardgame "Battleship", 
 - Git
 - Heroku
 - Textart<span>.</span>io - to create image out of text for homepage
+
+## Features
+
+### Welcome Message
+- Shows a welcome message and an ASCII art containing a ship with the words Top-Ship across its side.
+
+<details><summary>Welcome message</summary>
+<img src="docs/features/feature_welcome_message.jpg">
+</details>
+
+### Choose Board Size
+- Ability to choose board size to user liking
+<details><summary>Choose Board Size</summary>
+<img src="docs/features/features_choose_board_size.png">
+</details>
+
+### Choose No. Ships
+- Ability to choose amount of ships to user liking
+<details><summary>Choose No. Ships</summary>
+<img src="docs/features/features_choose_ship_no.png">
+</details>
+
+### User Input Validation
+- If Board Size or Ship No is too big or incorrect format then we request for the input again.
+<details><summary>Input validation</summary>
+<img src="docs/features/features_choose_board_size_input_validation.png">
+</details>
+
+### Easily Reset Game
+- Ability to easily reset the game through a click of a button
+<details><summary>Reset Game</summary>
+<img src="docs/features/features_reset_game.png">
+</details>
