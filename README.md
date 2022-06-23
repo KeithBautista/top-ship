@@ -4,6 +4,7 @@
 ![Start screen](docs/features/features_welcome_message.PNG)
 
 [Live Webpage](https://top-ship.herokuapp.com/)
+# Table of Contents
 
 1. [Project Goals](#project-goals)
     1. [User Goals](#user-goals)
@@ -21,7 +22,8 @@
 5. [Features](#features)
 6. [Testing](#validation)
     1. [PEP8 validation](#pep8-validation)
-    2. [Testing user stories](#testing-user-stories)
+    2. [Python Validator](#python-validator)
+    3. [Testing user stories](#testing-user-stories)
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -29,32 +31,39 @@
 ## Project Goals
 Top-Ship is an application that mimics the very popular boardgame "Battleship", though with a little Top-Gun twist :)
 
+[Back To **Table of Contents**](#table-of-contents)
 ### User Goals
 - Enjoy a memorable game such as Battleship and also get lost in the sea with hints of Top-Gun loitered about.
 
+[Back To **Table of Contents**](#table-of-contents)
 ### Site Owner Goals
 - Providing users with the ability to play a fun filled game from their childhood at the tips of their fingers and without having to clean up!
 
+[Back To **Table of Contents**](#table-of-contents)
 ## User Experience
 
 ### Target Audience
 - People who grew up with Battleship as one of their board games and Top-Gun as their favorite movies.
 - People who would like to play a board game from the comfort of their phone and not having to clean up the board game.
 
+[Back To **Table of Contents**](#table-of-contents)
 ### User Requirements and Expectations
 - Easy to load and set up with having minimal input
 - Ability to personalize the game to your liking
 - Easy to use
 
+[Back To **Table of Contents**](#table-of-contents)
 ### User Stories
 1. As a user, I want to be able to open up the game without having to set it up
 2. As a user, I want to be able to personalise the game based to my liking 
 3. As a user, I want to be able to see the game in an easy to read format and grid
 
+[Back To **Table of Contents**](#table-of-contents)
 ### Site Owner Stories
 4. As a site owner, I want users to be able to personalise the game to their liking
 5. As a site owner, I want users to easily load the game and see an easy to understand format game.
 
+[Back To **Table of Contents**](#table-of-contents)
 ## Technical Design
 
 ### Flowchart
@@ -62,6 +71,7 @@ Top-Ship is an application that mimics the very popular boardgame "Battleship", 
 <img src="docs/flowchart_top_ship.png">
 </details>
 
+[Back To **Table of Contents**](#table-of-contents)
 ## Technologies Used
 
 ### Languages
@@ -75,6 +85,7 @@ Top-Ship is an application that mimics the very popular boardgame "Battleship", 
 - Heroku
 - Textart<span>.</span>io - to create image out of text for homepage
 
+[Back To **Table of Contents**](#table-of-contents)
 ## Features
 
 ### Welcome Message
@@ -108,7 +119,9 @@ Top-Ship is an application that mimics the very popular boardgame "Battleship", 
 <img src="docs/features/features_reset_game.png">
 </details>
 
+[Back To **Table of Contents**](#table-of-contents)
 ## Validation
+### Pep8-validation
 PEP8 online was used to check the code for PEP8 requirements.
 All code passed with no errors and no warnings to show.
 
@@ -116,6 +129,7 @@ All code passed with no errors and no warnings to show.
 <img src="docs/validation/pep8_validation_run.png">
 </details>
 
+### Python-Validator
 extendsclass was also used as a Python Validator on top of the IDE.
 All code passed with no errors and no warnings to show.
 
@@ -123,6 +137,7 @@ All code passed with no errors and no warnings to show.
 <img src="docs/validation/python_validator_run.png">
 </details>
 
+[Back To **Table of Contents**](#table-of-contents)
 ### Testing User Stories
 ### User Stories
 1. As a user, I want to be able to open up the game without having to set it up
@@ -180,6 +195,7 @@ All code passed with no errors and no warnings to show.
 <img src="docs/user_stories/user_stories_grid_adjusted.png">
 </details>
 
+[Back To **Table of Contents**](#table-of-contents)
 ## Bugs
 
 | **Bug** | **Fix** |
@@ -187,6 +203,7 @@ All code passed with no errors and no warnings to show.
 | When updating the board size and no of ships in the input, the accomodating variables were not being updated | Allowing the variable to be accessed Globally meant that other methods were able to use it |
 | Whitespace | PEP8 validator found all whitespaces, in order to remove this error, you need to remove spaces that you may not see using the naked eye unless highlighted |
 
+[Back To **Table of Contents**](#table-of-contents)
 ## Deployment
 The website was deployed using Heroku by following these steps
 1. Login or Create a Heroku Account
@@ -211,11 +228,15 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press Enter to create your local clone.
 
+[Back To **Table of Contents**](#table-of-contents)
 ## Credits
 - StackOverflow - For any questions that I had, especially clearing whitespaces and how to continue strings when more than 70 characters
 - TextArt - For adding in a little style into the game which makes it more appealing to play.
 - Youtube especially "CS Students" in his tutorial in creating an Intermediate Battleship Game
 
+[Back To **Table of Contents**](#table-of-contents)
 ## Media
 - TextArt for the ASCII Art on welcome message
 - Diagrams<span>.</span>net for the Process Diagrams
+
+[Back To **Table of Contents**](#table-of-contents)
