@@ -108,3 +108,18 @@ Top-Ship is an application that mimics the very popular boardgame "Battleship", 
 <details><summary>Reset Game</summary>
 <img src="docs/features/features_reset_game.png">
 </details>
+
+## Validation
+PEP8 online was used to check the code for PEP8 requirements.
+All code passed with no errors and no warnings to show.
+
+<details><summary>run.py</summary>
+<img src="docs/validation/pep8_validation_run.png">
+</details>
+
+extendsclass was also used as a Python Validator on top of the IDE.
+All code passed with no errors and no warnings to show.
+
+<details><summary>run.py</summary>
+<img src="docs/validation/python_validator_run.png">
+</details>
