@@ -339,6 +339,9 @@ E.g A2''')
         else:
             print('''OOOHH Hollywood, you don't look too good.
 Out of Bounds: Please choose an integer between 8 and 10\n''')
+
+    print("The number of ships must be between 3 and 6\n")
+
     while True:
         try:
             global num_of_ships
