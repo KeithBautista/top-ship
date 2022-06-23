@@ -218,6 +218,5 @@ You can clone the repository by following these steps:
 - Youtube especially "CS Students" in his tutorial in creating an Intermediate Battleship Game
 
 ## Media
-TextArt for the ASCII Art on welcome message
-Diagrams<span>.</span>net for the Process Diagrams
-
+- TextArt for the ASCII Art on welcome message
+- Diagrams<span>.</span>net for the Process Diagrams
