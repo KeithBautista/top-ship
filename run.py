@@ -33,6 +33,10 @@ ship_positions = [[]]
 # Alphabet to be used on the x axis of the board
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+# Debug Mode
+debug_mode = True
+
+
 """
 ----- METHODS -----
 """
@@ -135,17 +139,16 @@ def print_grid():
     """Will print the grid with rows A-J and columns 0-9"""
     global grid
     global alphabet
-
-    debug_mode = False
+    global debug_mode
 
     alphabet = alphabet[0: len(grid) + 1]
 
     for row in range(len(grid)):
         print(alphabet[row], end=") ")
         for col in range(len(grid[row])):
-            if grid[row][col] == "O":
-                if debug_mode:
-                    print("O", end=" ")
+            if grid[row][col] == ".":
+                if debug_mode is False:
+                    print(".", end=" ")
                 else:
                     print(".", end=" ")
             else:
