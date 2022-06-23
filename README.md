@@ -24,9 +24,10 @@
     1. [PEP8 validation](#pep8-validation)
     2. [Python Validator](#python-validator)
     3. [Testing user stories](#testing-user-stories)
-8. [Bugs](#Bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
+8. [Bugs](#bugs)
+9. [Remaining Bugs](#remaining-bugs)
+10. [Deployment](#deployment)
+11. [Credits](#credits)
 
 ## Project Goals
 Top-Ship is an application that mimics the very popular boardgame "Battleship", though with a little Top-Gun twist :)
@@ -204,6 +205,10 @@ All code passed with no errors and no warnings to show.
 | Whitespace | PEP8 validator found all whitespaces, in order to remove this error, you need to remove spaces that you may not see using the naked eye unless highlighted |
 
 [Back To **Table of Contents**](#table-of-contents)
+## Remaining Bugs
+No remaining bugs
+
+[Back To **Table of Contents**](#table-of-contents)
 ## Deployment
 The website was deployed using Heroku by following these steps
 1. Login or Create a Heroku Account
@@ -233,6 +238,7 @@ You can clone the repository by following these steps:
 - StackOverflow - For any questions that I had, especially clearing whitespaces and how to continue strings when more than 70 characters
 - TextArt - For adding in a little style into the game which makes it more appealing to play.
 - Youtube especially "CS Students" in his tutorial in creating an Intermediate Battleship Game
+- Code Institute for deployment terminal
 
 [Back To **Table of Contents**](#table-of-contents)
 ## Media
