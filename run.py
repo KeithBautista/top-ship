@@ -295,7 +295,7 @@ def main():
   \40A                                                 |
    \                     TOP SHIP                       /
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
-    print("Welcome to Top Ship")
+    print("Welcome to Top Ship, Maverick!")
     print("You have 25 Missiles to take down the ships, may the battle begin!")
 
     print()
@@ -310,7 +310,8 @@ def main():
         except ValueError:
             print("The board size must be an integer number\n")
         else:
-            print("Out of Bounds: Please choose an integer between 8 and 10\n")
+            print('''OOOHH Hollywood, you don't look too good.
+Out of Bounds: Please choose an integer between 8 and 10\n''')
     while True:
         try:
             global num_of_ships
@@ -320,14 +321,15 @@ def main():
         except ValueError:
             print("The amount of ships requested must be an integer\n")
         else:
-            print("Out of Bounds: Please choose an integer between 3 and 6\n")
+            print('''OOOHH Hollywood, you don't look too good.
+Out of Bounds: Please choose an integer between 8 and 10\n''')
 
     create_grid()
 
     while game_over is False:
         print_grid()
-        print('''Number of ships
-        remaining: ''' + str(num_of_ships - num_of_ships_sunk))
+        print('''Number of ships 
+remaining: ''' + str(num_of_ships - num_of_ships_sunk))
         print("Number of Missiles left: " + str(bullets_left))
         shoot_bullet()
         print("------------------------------")
