@@ -51,18 +51,15 @@ def validate_grid_and_place_ship(start_row, end_row, start_col, end_col):
     global grid
     global ship_positions
 
-    """
-    All valid is true, if not valid and grid does not contain . then false.
-    """
+    # All valid is true, if not valid and grid does not contain . then false.
     all_valid = True
     for r in range(start_row, end_row):
         for c in range(start_col, end_col):
             if grid[r][c] != ".":
                 all_valid = False
                 break
-    """
-    If all valid then append the ships positions as '0'
-    """
+
+    # If all valid then append the ships positions as '0'
     if all_valid:
         ship_positions.append([start_row, end_row, start_col, end_col])
         for r in range(start_row, end_row):
@@ -102,16 +99,24 @@ def try_place_ship_grid(row, col, direction, length):
 
 
 def create_grid():
-    """Will create a 10x10 grid and randomly place down ships
-       of different sizes in different directions"""
+    """Will create a grid based off of user input and randomly place down ships
+       of different sizes in different directions again no of ships is also
+       based of user input"""
     global grid
     global grid_size
     global num_of_ships
     global ship_positions
 
+    # Random number generator
+
     random.seed(time.time())
 
     rows, cols = (grid_size, grid_size)
+
+    """
+    Below we retreive the number for cols and append so that we see the "."
+    We then do the same for the rows
+    """
 
     grid = []
     for r in range(rows):
@@ -123,6 +128,11 @@ def create_grid():
     num_of_ships_placed = 0
 
     ship_positions = []
+
+    """
+    Validation if we can indeed place a ship between the size of 3 and 5
+    Allows us to place ship various different ways
+    """
 
     while num_of_ships_placed != num_of_ships:
         random_row = random.randint(0, rows - 1)
@@ -136,13 +146,19 @@ def create_grid():
 
 
 def print_grid():
-    """Will print the grid with rows A-J and columns 0-9"""
+    # Will print the grid with rows A-J and columns 0-9
     global grid
     global alphabet
     global debug_mode
 
+    # Slicing the alphabet for the x axis values
     alphabet = alphabet[0: len(grid) + 1]
 
+    """
+    Where we print the grid, first part prints x axis
+    2nd part prints y axis on bottom of grid and also checks if debug_mode
+    Changes format of ships to easily identify when debugging
+    """
     for row in range(len(grid)):
         print(alphabet[row], end=") ")
         for col in range(len(grid[row])):
@@ -287,7 +303,7 @@ def main():
     """
     Main entry point of application that runs the game on a loop
     Has no Return but will use create_grid, print_grid, shoot_bullet and
-    check_for_game_over
+    check_for_game_over.
     """
     global game_over
     print("""                                  )___(
@@ -307,6 +323,10 @@ E.g A2''')
 
     print()
     print("The board size must be integers between 8 and 10\n")
+
+    """Validation based on what user chooses to be board size and no of ships.
+    has to be between 8 and 10 for board size and 3 and 6 for no of ships
+    """
 
     while True:
         try:
