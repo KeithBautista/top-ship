@@ -211,3 +211,13 @@ You can clone the repository by following these steps:
 5. Change the current working directory to the one where you want the cloned directory
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press Enter to create your local clone.
+
+## Credits
+- StackOverflow - For any questions that I had, especially clearing whitespaces and how to continue strings when more than 70 characters
+- TextArt - For adding in a little style into the game which makes it more appealing to play.
+- Youtube especially "CS Students" in his tutorial in creating an Intermediate Battleship Game
+
+## Media
+TextArt for the ASCII Art on welcome message
+Diagrams<span>.</span>net for the Process Diagrams
+
