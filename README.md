@@ -26,3 +26,12 @@
 9. [Deployment](#deployment)
 10. [Credits](#credits)
 11. [Acknowledgments](#acknowledgments)
+
+## Project Goals
+Top-Ship is an application that mimics the very popular boardgame "Battleship", though with a little Top-Gun twist :)
+
+### User Goals
+- Enjoy a memorable game such as Battleship and also get lost in the sea with hints of Top-Gun loitered about.
+
+### Site Owner Goals
+- Providing users with the ability to play a fun filled game from their childhood at the tips of their fingers and without having to clean up!
