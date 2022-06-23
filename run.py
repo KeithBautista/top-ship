@@ -19,7 +19,7 @@ grid_size = 0
 num_of_ships = 0
 
 # Bullets Left
-bullets_left = 25
+bullets_left = 50
 
 # If Game is Over
 game_over = False
@@ -299,7 +299,7 @@ def main():
    \                     TOP SHIP                       /
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
     print("Welcome to Top Ship, Maverick!")
-    print('''You have 25 Missiles to take down the ships, may the battle begin!
+    print('''You have 50 Missiles to take down the ships, may the battle begin!
 In order to play, you must select your board size and the amount of ships you'd
 like on the board. You then need to guess where the ship is by using the
 letters on the left hand side and the numbers on the bottom of the grid.
