@@ -195,4 +195,19 @@ The website was deployed using Heroku by following these steps
 3. Choose and app name and your region and click "Create app"
 4. Go to the "settings" tab of your build and add the python build first and then the node.js build. Without the node.js pack the mock terminal will not work.
 5. Go to the Config Vars just right above the buildpacks and place in "PORT" as the "KEY" and then "8000" as the "VALUE" 
-6. 
+6. Navigate to the "deploy" tab and pick GitHub as your deployment method. Make sure that you opt into the "Automatic Deploys" as the Heroku app will update as soon as you push from gitpod to GitHub
+7. Search for the repository you would like to connect to. This option should be right above where you clicked "Enable Automatic Deploys"
+8. Wait for the app to build and then click on the "View" link
+
+You can fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on the Fork button in the upper right-hand corner
+
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone.
