@@ -123,3 +123,60 @@ All code passed with no errors and no warnings to show.
 <details><summary>run.py</summary>
 <img src="docs/validation/python_validator_run.png">
 </details>
+
+### Testing User Stories
+### User Stories
+1. As a user, I want to be able to open up the game without having to set it up
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Welcome Message | Run Program | Easily Set Up Game | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_stories/user_stories_welcome_message.PNG">
+</details>
+
+2. As a user, I want to be able to personalise the game based to my liking 
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Choose Board Size, Choose No. Ships | Provide desired input based on liking | Based on input, grid will adjust | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_stories/user_stories_choose_board_size.png">
+<img src="docs/user_stories/user_stories_choose_ship_no.png">
+<img src="docs/user_stories/user_stories_grid_adjusted.png">
+</details>
+
+3. As a user, I want to be able to see the game in an easy to read format and grid
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Welcome Message, Whole Program | Input desired no of ships and board size | Based on input, grid will adjust | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_stories/user_stories_grid_adjusted.png">
+</details>
+
+### Site Owner Stories
+4. As a site owner, I want users to be able to personalise the game to their liking
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Choose Board Size, Choose No. Ships | Provide desired input based on liking | Based on input, grid will adjust | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_stories/user_stories_choose_board_size.png">
+<img src="docs/user_stories/user_stories_choose_ship_no.png">
+<img src="docs/user_stories/user_stories_grid_adjusted.png">
+</details>
+
+5. As a site owner, I want users to easily load the game and see an easy to understand format game.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Welcome Message, Whole Program | Input desired no of ships and board size | Based on input, grid will adjust | Works as expected |
+
+<details><summary>Screenshots</summary>
+<img src="docs/user_stories/user_stories_grid_adjusted.png">
+</details>
