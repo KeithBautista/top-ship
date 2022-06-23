@@ -57,3 +57,21 @@ Top-Ship is an application that mimics the very popular boardgame "Battleship", 
 5. As a site owner, I want users to easily load the game and see an easy to understand format game.
 
 ## Technical Design
+
+### Flowchart
+<details><summary>Flowchart</summary>
+<img src="docs/flowchart_top_ship.png">
+</details>
+
+## Technologies Used
+
+### Languages
+- Python 3
+
+### Frameworks and Tools
+- diagrams<span>.</span>net - to create a flow chart
+- GitHub
+- GitPod
+- Git
+- Heroku
+- Textart<span>.</span>io - to create image out of text for homepage

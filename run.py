@@ -326,7 +326,7 @@ Out of Bounds: Please choose an integer between 8 and 10\n''')
             print("The amount of ships requested must be an integer\n")
         else:
             print('''OOOHH Hollywood, you don't look too good.
-Out of Bounds: Please choose an integer between 8 and 10\n''')
+Out of Bounds: Please choose an integer between 3 and 6\n''')
 
     create_grid()
 
