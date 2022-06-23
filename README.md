@@ -35,3 +35,25 @@ Top-Ship is an application that mimics the very popular boardgame "Battleship", 
 
 ### Site Owner Goals
 - Providing users with the ability to play a fun filled game from their childhood at the tips of their fingers and without having to clean up!
+
+## User Experience
+
+### Target Audience
+- People who grew up with Battleship as one of their board games and Top-Gun as their favorite movies.
+- People who would like to play a board game from the comfort of their phone and not having to clean up the board game.
+
+### User Requirements and Expectations
+- Easy to load and set up with having minimal input
+- Ability to personalize the game to your liking
+- Easy to use
+
+### User Stories
+1. As a user, I want to be able to open up the game without having to set it up
+2. As a user, I want to be able to personalise the game based to my liking 
+3. As a user, I want to be able to see the game in an easy to read format and grid
+
+### Site Owner Stories
+4. As a site owner, I want users to be able to personalise the game to their liking
+5. As a site owner, I want users to easily load the game and see an easy to understand format game.
+
+## Technical Design
