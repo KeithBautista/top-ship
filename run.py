@@ -16,7 +16,7 @@ grid = [[]]
 grid_size = 0
 
 # The amount of Ships user can place on Grid
-num_of_ships = 8
+num_of_ships = 0
 
 # Bullets Left
 bullets_left = 50
@@ -274,7 +274,7 @@ def check_for_game_over():
         print("Congratulations you won!")
         game_over = True
     elif bullets_left <= 0:
-        print("Sorry, you lost! You ran out of bullets, try again next time!")
+        print("Sorry, you lost! You ran out of Missiles, try again next time!")
         game_over = True
 
 # Main Point of Entry
@@ -289,21 +289,31 @@ def main():
     global game_over
 
     print("Welcome to Top Ship")
-    print("You have 50 bullets to take down 8 ships, may the battle begin!")
+    print("You have 25 Missiles to take down the ships, may the battle begin!")
 
     print()
-    print("The board size must be integers between 3 and 10\n")
+    print("The board size must be integers between 8 and 10\n")
 
     while True:
         try:
             global grid_size
             grid_size = int(input("Choose the board size: "))
-            if grid_size >= 3 and grid_size <= 10:
+            if grid_size >= 8 and grid_size <= 10:
                 break
         except ValueError:
             print("The board size must be an integer number\n")
         else:
-            print("Out of Bounds: Please choose an integer between 3 and 10\n")
+            print("Out of Bounds: Please choose an integer between 8 and 10\n")
+    while True:
+        try: 
+            global num_of_ships
+            num_of_ships = int(input("Choose number of ships: "))
+            if num_of_ships >= 3 and num_of_ships <= 6:
+                break
+        except ValueError:
+            print("The amount of ships requested must be an integer\n")
+        else:
+            print("Out of Bounds: Please choose an integer between 3 and 6\n")
 
     create_grid()
 
@@ -311,7 +321,7 @@ def main():
         print_grid()
         print('''Number of ships
         remaining: ''' + str(num_of_ships - num_of_ships_sunk))
-        print("Number of bullets left: " + str(bullets_left))
+        print("Number of Missiles left: " + str(bullets_left))
         shoot_bullet()
         print("------------------------------")
         print("")
