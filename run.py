@@ -296,7 +296,11 @@ def main():
    \                     TOP SHIP                       /
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~""")
     print("Welcome to Top Ship, Maverick!")
-    print("You have 25 Missiles to take down the ships, may the battle begin!")
+    print('''You have 25 Missiles to take down the ships, may the battle begin!
+In order to play, you must select your board size and the amount of ships you'd
+like on the board. You then need to guess where the ship is by using the
+letters on the left hand side and the numbers on the bottom of the grid.
+E.g A2''')
 
     print()
     print("The board size must be integers between 8 and 10\n")
@@ -328,8 +332,7 @@ Out of Bounds: Please choose an integer between 8 and 10\n''')
 
     while game_over is False:
         print_grid()
-        print('''Number of ships 
-remaining: ''' + str(num_of_ships - num_of_ships_sunk))
+        print("Number of Ships left: " + str(num_of_ships - num_of_ships_sunk))
         print("Number of Missiles left: " + str(bullets_left))
         shoot_bullet()
         print("------------------------------")
