@@ -203,6 +203,7 @@ All code passed with no errors and no warnings to show.
 | ----------- | ----------- |
 | When updating the board size and no of ships in the input, the accomodating variables were not being updated | Allowing the variable to be accessed Globally meant that other methods were able to use it |
 | Whitespace | PEP8 validator found all whitespaces, in order to remove this error, you need to remove spaces that you may not see using the naked eye unless highlighted |
+| Deployment | Eco Dynos Within Heroku was not enabled from previous deployment. Now enabled via the Heroku Dashboard |
 
 [Back To **Table of Contents**](#table-of-contents)
 ## Remaining Bugs
